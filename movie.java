@@ -8,10 +8,10 @@ Class.forName("com.mysql.cj.jdbc.Driver");
 Connection con = DriverManager.
 getConnection("jdbc:mysql://localhost/movies?","root","skanda2287"); 
 Statement s = con.createStatement(); 
-String sq == "select * from movie";
+String sq = "select * from movie";
 ResultSet rs = s.executeQuery(sq);
 while(rs.next()  {
-System.out.println(rs. getString(1)+" rs.getString(2)+" "+rs.getInt(3)+" "+rs. getString(4));
+System.out.println(rs. getString(1)+" "+ rs.getString(2)+" "+rs.getInt(3)+" "+rs. getString(4));
 }
 con.close();
 }
